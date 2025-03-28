@@ -6,7 +6,7 @@ body{
     background-size: cover; /* Ajusta la imagen para cubrir todo el fondo */
     background-position: center; /* Centra la imagen en el fondo */
     background-repeat: no-repeat; /* Evita que la imagen se repita */
-    z-index: -1; /* Asegura que la imagen esté detrás del contenido */    
+    z-index: -1; /* Asegura que la imagen esté detrás del contenido */
 }
 
 #seleccionar-mascota{
@@ -130,8 +130,18 @@ input{
     border-radius: 20px;
     width: 120px;
     font-size: 20px;
+    font-family: "Pixelify Sans", sans-serif;
+    cursor: pointer;
 }
-
+.boton-ataque:hover{
+    background-color: rgb(229, 255, 0);
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    width: 120px;
+    font-size: 20px;
+    transform: scale(1.1);
+}
 #resultado{
     width: 200px;
     background-color: rgb(189, 224, 254, 0.7);
@@ -157,8 +167,14 @@ input{
 }
 
 .ataques{
-    display: grid;
+    color: white;
+    display: flow-root;
     grid-template-columns: 100px 100px;
     text-align: center;
     text-align: center;
+    text-shadow: 
+    -1px -1px 0 white,
+     1px -1px 0 rgb(0, 0, 0),
+    -1px  1px 0 white,
+     1px  1px 0 rgb(0, 0, 0); /* Crea el efecto de borde */
 }

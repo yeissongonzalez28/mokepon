@@ -94,6 +94,20 @@ input{
     padding: 10px;
     margin: 10px;
     font-size: 20px;
+    transition: transform 0.3s ease;
+}
+#boton-mascota:hover{
+    box-sizing: border-box;
+    width: 130px;
+    height: 40px;
+    background-color: rgb(229, 255, 0);
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 20px;
+    padding: 10px;
+    margin: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    transform: scale(1.1);
 }
 
 #seleccionar-ataque{

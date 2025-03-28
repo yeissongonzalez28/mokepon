@@ -19,7 +19,11 @@ body{
 .titulo {
     color: #03045e;
     font-size: 80px;
-    
+    text-shadow: 
+    -2px -2px 0 white,  
+     2px -2px 0 white,  
+    -2px  2px 0 white,  
+     2px  2px 0 white; /* Crea el efecto de borde */
 }
 
 .subtitulo{
@@ -29,9 +33,12 @@ body{
     border: 1px solid black;
     border-radius: 20px;
     width: 280px;
-    padding-left: 10px;
+    text-shadow: 
+    -1px -1px 0 white,  
+     1px -1px 0 white,  
+    -1px  1px 0 white,  
+     1px  1px 0 white; /* Crea el efecto de borde */
 }
-
 p{
     font-size: 40px;
 }
@@ -86,8 +93,8 @@ input{
 
 #boton-mascota{
     box-sizing: border-box;
-    width: 130px;
-    height: 40px;
+    width: 150px;
+    height: 60px;
     background-color: chartreuse;
     border: 2px solid black;
     border-radius: 20px;
@@ -95,11 +102,12 @@ input{
     margin: 10px;
     font-size: 20px;
     transition: transform 0.3s ease;
+    font-family: "Pixelify Sans", sans-serif;
 }
 #boton-mascota:hover{
     box-sizing: border-box;
-    width: 130px;
-    height: 40px;
+    width: 150px;
+    height: 60px;
     background-color: rgb(229, 255, 0);
     border: 2px solid rgb(255, 255, 255);
     border-radius: 20px;

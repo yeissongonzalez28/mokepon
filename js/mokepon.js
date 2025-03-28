@@ -38,18 +38,18 @@ function seleccionarMascotaJugador(){
     let sectionSeleccionarAtaque= document.getElementById("seleccionar-ataque")
     sectionSeleccionarAtaque.style.display = "flex"
 
-    let hipodogeSeleccionado = document.getElementById("hipodoge").checked
-    let capipepoSeleccionado = document.getElementById("capipepo").checked
-    let ratigueyaSeleccionado = document.getElementById("ratigueya").checked
+    let charmanderSeleccionado = document.getElementById("charmander").checked
+    let pikachuSeleccionado = document.getElementById("pikachu").checked
+    let squirtleSeleccionado = document.getElementById("squirtle").checked
 
     let spanMascotaJugador = document.getElementById("mascota-jugador")
 
-    if (hipodogeSeleccionado){
-        spanMascotaJugador.innerHTML = "Hipodoge"
-    }else if(capipepoSeleccionado){
-        spanMascotaJugador.innerHTML = "Capipepo"
-    }else if(ratigueyaSeleccionado){
-        spanMascotaJugador.innerHTML = "Ratigueya"
+    if (charmanderSeleccionado){
+        spanMascotaJugador.innerHTML = "charmander"
+    }else if(pikachuSeleccionado){
+        spanMascotaJugador.innerHTML = "pikachu"
+    }else if(squirtleSeleccionado){
+        spanMascotaJugador.innerHTML = "squirtle"
     }else{
         alert("Debes seleccionar una Mascota")
     }
@@ -62,11 +62,11 @@ function seleccionarMascotaEmemigo(){
     let spanMascotaEnemigo = document.getElementById("mascota-enemigo")
 
     if(mascotaAleatorio == 1){
-        spanMascotaEnemigo.innerHTML = "Hipodoge"
+        spanMascotaEnemigo.innerHTML = "charmander"
     }else if(mascotaAleatorio == 2){
-        spanMascotaEnemigo.innerHTML = "Capipepo"
+        spanMascotaEnemigo.innerHTML = "pikachu"
     }else{
-        spanMascotaEnemigo.innerHTML = "Ratigueya"
+        spanMascotaEnemigo.innerHTML = "squirtle"
     }
 
 }
